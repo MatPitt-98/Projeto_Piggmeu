@@ -1,9 +1,10 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #ffdaa4;
-    background-image: url("plano_de_fundo.png");
+    background-image: url("plano_de_fundo_piggmeu.png");
     background-repeat: no-repeat;
     background-position: center top;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -11,7 +12,7 @@ body {
 
 .container {
     width: 500px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     border-style: solid;
     border-width: 5px;
@@ -73,6 +74,7 @@ th, td {
     margin-top: 15px;
     text-align: center;
     font-weight: bold;
+    font-size: larger;
 }
 
 .btn-delete {
@@ -90,5 +92,4 @@ th, td {
     background-color: #f3863c;
     border-color: #fc9b40;
     border-style: inset;
-    border-width: 3px;
 }

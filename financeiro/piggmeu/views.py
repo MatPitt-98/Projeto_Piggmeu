@@ -21,9 +21,13 @@ def menu(request):
     transacoes = Transacao.objects.all()
     total_receitas = sum(t.valor for t in transacoes if t.tipo == 'R')
     total_despesas = sum(t.valor for t in transacoes if t.tipo == 'D')
+    quantidade_receitas = sum(1 for t in transacoes if t.tipo == 'R')
+    quantidade_despesas = sum(1 for t in transacoes if t.tipo == 'D')
 
     return render(request, 'home.html', {
         'transacoes': transacoes,
         'total_receitas': total_receitas,
-        'total_despesas': total_despesas
+        'total_despesas': total_despesas,
+        'quantidade_receitas': quantidade_receitas,
+        'quantidade_despesas': quantidade_despesas,
     })

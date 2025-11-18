@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Piggmeu</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'style_piggmeu.css' %}">
 </head>
 
 <body>
@@ -53,8 +53,8 @@
         </table>
 
         <div class="resumo">
-            <p><strong>Total de Receitas:</strong> R$ {{ total_receitas }}</p>
-            <p><strong>Total de Despesas:</strong> R$ {{ total_despesas }}</p>
+            <p><strong>{{ quantidade_receitas }} Receitas totalizando</strong> R$ {{ total_receitas }}</p>
+            <p><strong>{{ quantidade_despesas }} Despesas totalizando</strong> R$ {{ total_despesas }}</p>
         </div>
     </div>
 </body>
